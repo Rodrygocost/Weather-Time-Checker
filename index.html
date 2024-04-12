@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./dist.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Weather home</title>
+  </head>
+  <body>
+    <div class="main" id="main">
+      <h1 class="main_tittle">Procure sua cidade</h1>
+      <div class="main_header">
+        <section id="input_sec">
+          <h1 id="main_data_input" class="main_data_input">Cidade:</h1>
+          <label for="city_name"></label>
+          <input
+            type="text"
+            name="city_name_input"
+            id="city_name"
+            placeholder="Ex: São Paulo"
+            class="content"
+          />
+        </section>
+        <section id="input_sec">
+          <h1 id="main_data_input">Estado:</h1>
+          <label for="state_code"></label>
+          <input
+            type="text"
+            name="state_code"
+            id="state_code"
+            placeholder="Ex: SP"
+            class="content"
+            list="state_code"
+          />
+        </section>
+        <div class="search_city_btn">
+          <input
+            type="button"
+            id="search_city_btn"
+            class="btn_to_search"
+            value="Buscar"
+          />
+        </div>
+      </div>
+      <div id="to_show_all_data" class="hide">
+        <div class="card" id="card">
+          <section id="city_name_flag">
+            <h1 id="city_name_resultpage">Vargem Grande</h1>
+            <img src="" id="country_showed_flag" />
+          </section>
+
+          <div class="whater_another_data">
+            <h1 id="degrees">33°</h1>
+            <div class="whater_another_data_complement">
+              <p class="wheater_moisture" id="wheater_moisture">
+                &#128167;&ensp;
+              </p>
+              <p class="weather_wind" id="weather_wind">&#x1F4A8;</p>
+              <img
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+                class="wheater_img"
+                id="wheater_img"
+              />
+              <p class="wheater_state" id="wheater_state">ensolarado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hide" id="time_showed">
+        <div class="all_watch">
+          <div class="timer_on_screen">
+            <h1 class="timer" id="timer_hours">10</h1>
+            <h1 class="timer_space">:</h1>
+            <h1 class="timer" id="timer_minutes">18</h1>
+            <h1 class="timer_space">:</h1>
+            <h1 class="timer" id="timer_seconds">26</h1>
+          </div>
+          <div class="timer_message">
+            <p>Horário local agora</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <footer class="footer">
+      Made with
+      ‎
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="#f64348"
+        stroke="#f64348"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+        ></path>
+      </svg>
+      ‎
+      by
+      ‎
+
+      <a
+        href="https://github.com/Rodrygocost"
+        target="_blank"
+        class="link-footer"
+      >
+      ‎ @rodrig_cost</a
+      
+    </footer>
+  </body>
+</html>

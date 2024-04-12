@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-image: url(../img/purple_bg_img.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* common styles */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 60vh;
+  height: auto;
+  padding: 35px;
+  border-radius: 1rem;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  font-family: "Roboto", default;
+  font-weight: bold;
+
+  h1 {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+}
+
+/* inputs */
+
+#input_sec {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  align-items: start;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", default;
+  font-weight: bold;
+
+  #main_data_input {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+}
+
+.content {
+  border-radius: 2rem;
+  border: none;
+  background-color: #fff;
+  padding: 7px;
+  margin-right: 40px;
+  width: 140px;
+  height: 22px;
+}
+
+.content:focus {
+  outline: none;
+  box-shadow: 0.5rem 0.3rem 1.4rem rgba(0, 0, 0, 0.161);
+  transition: all 0.7s;
+}
+
+.main_header {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+/* results page style ------------- */
+
+/* for wheater card ==== */
+
+#city_name_resultpage {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+
+.wheater_img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  padding: 0;
+}
+
+.whater_another_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Roboto", default;
+  font-weight: bold;
+}
+
+#degrees {
+  font-size: 130px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 30px;
+}
+
+.whater_another_data_complement {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-bottom: 25px;
+
+  p {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  border-bottom: solid 2px #fff;
+  border-radius: 2rem;
+}
+
+.wheater_state {
+  padding-bottom: 18px;
+}
+
+/* to card image */
+
+/* to flag */
+
+#city_name_flag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+}
+
+#country_showed_flag {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  padding-bottom: 0px;
+  object-fit: cover;
+}
+
+/* to button */
+
+.search_city_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_to_search {
+  display: flex;
+  background-color: #fff;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  min-width: 100px;
+  min-height: 38px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Roboto", default;
+  font-weight: bold;
+}
+
+.btn_to_search:hover {
+  background-color: #ebeeee;
+  box-shadow: #6c6c6c 0 -6px 8px inset;
+  transform: scale(1.125);
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn_to_search:active {
+  transform: scale(1.025);
+}
+
+/* to error msg */
+
+#error-message {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Roboto", default;
+  font-weight: bold;
+}
+
+/* to keep the div hide */
+
+.hide {
+  display: none;
+}
+
+.showed {
+  display: flex;
+}
+
+/* o watch in he screen */
+
+.timer_on_screen {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  margin-top: 40px;
+  font-family: "Roboto", default;
+  font-weight: bold;
+
+  h1 {
+    color: #000;
+  }
+
+  .timer_space {
+    color: #fff;
+    padding: 8px;
+  }
+
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    padding: 8px 14px;
+  }
+}
+
+.timer_message {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding-top: 15px;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.all_watch {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  color: #fff;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: #9a9999;
+  }
+}
+
+/* medias querry ----- */
+
+@media (max-width: 815px) {
+  .main {
+    width: 30px;
+  }
+
+  .content {
+    margin-right: 25px;
+    width: 100px;
+    height: 16px;
+  }
+
+  .btn_to_search {
+    min-width: 80px;
+    min-height: 32px;
+    font-size: 14px;
+  }
+
+  #input_sec {
+    #main_data_input {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  body {
+    min-width: 100vh;
+    min-height: 150vh;
+    overflow: hidden;
+  }
+  .main {
+    padding: 1px;
+    padding-bottom: 20px;
+
+    h1 {
+      font-size: 25px;
+      padding-top: 40px;
+    }
+  }
+
+  .main_header {
+    overflow: hidden;
+    min-width: 227px;
+    margin-bottom: 20px;
+  }
+
+  #error-message {
+    width: 200px;
+    font-size: 6px;
+  }
+
+  #degrees {
+    font-size: 60px;
+  }
+
+  #city_name_resultpage {
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+
+  .whater_another_data_complement {
+    margin-bottom: 12px;
+
+    p {
+      padding-top: 10px;
+      padding-right: 8px;
+      padding-left: 8px;
+      font-size: 10px;
+    }
+  }
+
+  .content {
+    margin-right: 10px;
+    width: 70px;
+    height: 15px;
+  }
+
+  .btn_to_search {
+    min-width: 80px;
+    min-height: 30px;
+    font-size: 14px;
+  }
+
+  #input_sec {
+    #main_data_input {
+      font-size: 14px;
+    }
+  }
+
+  .timer_on_screen {
+    margin-top: 40px;
+
+    h1 {
+      font-size: 20;
+    }
+
+    .timer_space {
+      color: #fff;
+      padding: 5px;
+    }
+
+    .timer {
+      font-size: 20px;
+      background-color: #fff;
+      border-radius: 0.7rem;
+      padding: 6px 12px;
+    }
+  }
+
+  .timer_message {
+    padding-top: 12px;
+    font-size: 9px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    min-width: 100vh;
+    min-height: 220vh;
+    overflow: hidden;
+  }
+
+  .main {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 400px;
+  }
+}
